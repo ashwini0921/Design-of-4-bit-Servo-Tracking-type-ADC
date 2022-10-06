@@ -106,8 +106,6 @@ It is a tool which converts Verilog code to C++ objects. Refer: https://www.veri
 
 ![image](https://user-images.githubusercontent.com/111654188/194373726-78fb7ff7-21dc-4f7b-9ff5-852b59732b2f.png)
 
-# GAW Plots
-
 # Steps to run generate NgVeri Model
 
 
