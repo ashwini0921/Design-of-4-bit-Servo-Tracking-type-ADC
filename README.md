@@ -12,6 +12,8 @@ A 4-bit servo tracking analog to digital converter is designed which can convert
 
 # Circuit Details
 
+The Digital output of analog signal is given by signal Q3 Q2 Q1 Q0
+
 # Software Used
 
 ## eSim
