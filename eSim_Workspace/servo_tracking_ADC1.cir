@@ -1,0 +1,42 @@
+* /home/ashwini.kumar2020/eSim-Workspace/servo_tracking_ADC1/servo_tracking_ADC1.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: Thu 06 Oct 2022 05:46:52 PM IST
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+U2  Net-_U2-Pad1_ Net-_U1-Pad2_ Net-_U2-Pad3_ Net-_U2-Pad4_ Net-_U2-Pad5_ Net-_U2-Pad6_ ashwini_updown_counter4bit		
+v5  Net-_U8-Pad1_ GND pulse		
+v3  VDD GND DC		
+scmode1  SKY130mode		
+X2  VDD VSS Net-_SC1-Pad2_ GND Vout GND avsd_opamp		
+v4  GND VSS DC		
+X1  VDD VSS Vout in comp GND avsd_opamp		
+SC3  Net-_SC1-Pad2_ Net-_SC2-Pad1_ rin sky130_fd_pr__res_generic_pd		
+SC2  Net-_SC2-Pad1_ Q3 rin sky130_fd_pr__res_generic_pd		
+SC5  Net-_SC5-Pad1_ Q2 rin sky130_fd_pr__res_generic_pd		
+SC6  Net-_SC4-Pad2_ Net-_SC5-Pad1_ rin sky130_fd_pr__res_generic_pd		
+SC8  Net-_SC8-Pad1_ Q1 rin sky130_fd_pr__res_generic_pd		
+SC9  Net-_SC10-Pad1_ Net-_SC8-Pad1_ rin sky130_fd_pr__res_generic_pd		
+SC12  Net-_SC10-Pad2_ Net-_SC11-Pad1_ rin sky130_fd_pr__res_generic_pd		
+SC11  Net-_SC11-Pad1_ Q0 rin sky130_fd_pr__res_generic_pd		
+SC4  Net-_SC1-Pad2_ Net-_SC4-Pad2_ rin sky130_fd_pr__res_generic_pd		
+SC7  Net-_SC4-Pad2_ Net-_SC10-Pad1_ rin sky130_fd_pr__res_generic_pd		
+SC10  Net-_SC10-Pad1_ Net-_SC10-Pad2_ rin sky130_fd_pr__res_generic_pd		
+SC14  Net-_SC13-Pad2_ GND rin sky130_fd_pr__res_generic_pd		
+SC13  Net-_SC10-Pad2_ Net-_SC13-Pad2_ rin sky130_fd_pr__res_generic_pd		
+SC1  Vout Net-_SC1-Pad2_ rin sky130_fd_pr__res_generic_pd		
+v2  rin GND DC		
+U3  Vout plot_v1		
+U1  comp Net-_U1-Pad2_ adc_bridge_1		
+U4  Net-_U2-Pad3_ Q3 dac_bridge_1		
+U5  Net-_U2-Pad4_ Q2 dac_bridge_1		
+U6  Net-_U2-Pad5_ Q1 dac_bridge_1		
+U7  Net-_U2-Pad6_ Q0 dac_bridge_1		
+U8  Net-_U8-Pad1_ Net-_U2-Pad1_ adc_bridge_1		
+U9  in plot_v1		
+v1  in GND sine		
+U10  comp plot_v1		
+
+.end
