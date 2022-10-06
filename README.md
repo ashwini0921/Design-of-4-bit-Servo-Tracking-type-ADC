@@ -42,6 +42,8 @@ It is a tool which converts Verilog code to C++ objects. Refer: https://www.veri
 
 # Verilog Code
 
+![image](https://user-images.githubusercontent.com/111654188/194382637-13d26ec0-9035-4d6d-95e3-740e2419f852.png)
+
 # Makerchip
 
     \TLV_version 1d: tl-x.org
