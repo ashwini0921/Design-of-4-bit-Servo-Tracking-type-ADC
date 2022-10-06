@@ -100,4 +100,8 @@ It is a tool which converts Verilog code to C++ objects. Refer: https://www.veri
 
 ![servo_tracking_ADC1 cir out_page-0002](https://user-images.githubusercontent.com/111654188/194315674-d0fde71c-6574-40c5-9779-40c2639da3cd.jpg)
 
+# NgSpice Plots
 
+![image](https://user-images.githubusercontent.com/111654188/194316728-0c081a46-caa4-4326-8a25-f1b6d07e36d7.png)
+
+![image](https://user-images.githubusercontent.com/111654188/194316814-66e88496-010d-4ddc-a036-48dfe004dcb2.png)
