@@ -2,7 +2,7 @@
 
 # Abstract
 
-A 4-bit servo tracking analog to digital converter is designed which can convert analog signal of amplitude ranging between 0 to 8 V. The input voltage VCC of the designed circuit is 9V. For powering flip-flops in counter circuit, 9 V is step down to 5 V using voltage regulator. 4-bit synchronous up down counter is designed using J-K flip flop and logic circuits. The 4-bit digital input is converted to analog output using R-2R ladder type DAC. 555 timer astable multivibrator circuit generates the clock pulses for counter circuit.
+A 4-bit servo tracking analog to digital converter is designed which can convert analog signal of amplitude ranging between 0 to VCC V. The input voltage VCC of the designed circuit is 1 V. 4 bit up down counter circuit is designed using verilog code in Makerchip. The Verilator converts the verilog code to usable 4 bit up down counter chip. The 4 bit up-down counter is used along with other SKY130 components like resistor and op-amps to design 4 bit servo tracking type ADC.
 
 # Reference Circuit Diagram
 
@@ -96,15 +96,15 @@ It is a tool which converts Verilog code to C++ objects. Refer: https://www.veri
 
 # Netlist
 
-![servo_tracking_ADC1 cir out_page-0001](https://user-images.githubusercontent.com/111654188/194315559-62a7a2f6-45c3-434e-afb0-58501ec3f52f.jpg)
+![image](https://user-images.githubusercontent.com/111654188/194375805-48975c66-c75e-4c05-a468-5647711157eb.png)
 
-![servo_tracking_ADC1 cir out_page-0002](https://user-images.githubusercontent.com/111654188/194315674-d0fde71c-6574-40c5-9779-40c2639da3cd.jpg)
+![image](https://user-images.githubusercontent.com/111654188/194375871-3b4f58ec-680a-4cb2-91ca-a8935960fbcf.png)
 
 # NgSpice Plots
 
-![image](https://user-images.githubusercontent.com/111654188/194316728-0c081a46-caa4-4326-8a25-f1b6d07e36d7.png)
+![image](https://user-images.githubusercontent.com/111654188/194373619-11f1ff78-a4f0-40ba-85fd-cfdbf2e01219.png)
 
-![image](https://user-images.githubusercontent.com/111654188/194316814-66e88496-010d-4ddc-a036-48dfe004dcb2.png)
+![image](https://user-images.githubusercontent.com/111654188/194373726-78fb7ff7-21dc-4f7b-9ff5-852b59732b2f.png)
 
 # GAW Plots
 
