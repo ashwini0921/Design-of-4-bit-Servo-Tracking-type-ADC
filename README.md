@@ -131,10 +131,10 @@ It is a tool which converts Verilog code to C++ objects. Refer: https://www.veri
        git clone https://github.com/ashwini0921/Design-of-4-bit-Servo-Tracking-type-ADC.git
 3. Change directory:
 
-       cd eSim_project_files/Design_of_4-bit-Servo-Tracking-type-ADC
+       cd eSim-Workspace/servo_tracking_ADC1
 4. Run ngspice:
 
-        ngspice xor_xnor.cir.out
+        ngspice servo_tracking_ADC1.cir.out
 5. To run the project in eSim:
 
 1)  Run eSim
