@@ -84,4 +84,12 @@ It is a tool which converts Verilog code to C++ objects. Refer: https://www.veri
      \SV
      endmodule
 
+# Makerchip Plots
 
+## Up Count
+
+![image](https://user-images.githubusercontent.com/111654188/194245746-8f000f2a-f53b-4c1c-a4e4-2905b97647f4.png)
+
+## Down Count
+
+![image](https://user-images.githubusercontent.com/111654188/194245244-1b68f937-72f8-4f1d-b483-fb76f382fc15.png)
