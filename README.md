@@ -93,3 +93,11 @@ It is a tool which converts Verilog code to C++ objects. Refer: https://www.veri
 ## Down Count
 
 ![image](https://user-images.githubusercontent.com/111654188/194245244-1b68f937-72f8-4f1d-b483-fb76f382fc15.png)
+
+# Netlist
+
+![servo_tracking_ADC1 cir out_page-0001](https://user-images.githubusercontent.com/111654188/194315559-62a7a2f6-45c3-434e-afb0-58501ec3f52f.jpg)
+
+![servo_tracking_ADC1 cir out_page-0002](https://user-images.githubusercontent.com/111654188/194315674-d0fde71c-6574-40c5-9779-40c2639da3cd.jpg)
+
+
