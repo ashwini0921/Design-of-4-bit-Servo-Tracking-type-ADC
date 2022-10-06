@@ -105,3 +105,46 @@ It is a tool which converts Verilog code to C++ objects. Refer: https://www.veri
 ![image](https://user-images.githubusercontent.com/111654188/194316728-0c081a46-caa4-4326-8a25-f1b6d07e36d7.png)
 
 ![image](https://user-images.githubusercontent.com/111654188/194316814-66e88496-010d-4ddc-a036-48dfe004dcb2.png)
+
+# GAW Plots
+
+# Steps to run generate NgVeri Model
+
+
+1. Open eSim
+2. Run NgVeri-Makerchip
+3. Add top level verilog file in Makerchip Tab
+4. Click on NgVeri tab
+5. Add dependency files
+6. Click on Run Verilog to NgSpice Converter
+7. Debug if any errors
+8. Model created successfully
+
+# Steps to run this project
+
+
+1. Open a new terminal
+2. Clone this project using the following command:
+
+       git clone https://github.com/ashwini0921/Design-of-4-bit-Servo-Tracking-type-ADC.git
+3. Change directory:
+
+       cd eSim_project_files/Design_of_4-bit-Servo-Tracking-type-ADC
+4. Run ngspice:
+
+        ngspice xor_xnor.cir.out
+5. To run the project in eSim:
+
+1)  Run eSim
+2)  Load the project
+3)  Open eeSchema
+
+# Acknowlegdements
+
+1. FOSSEE, IIT Bombay
+2. Steve Hoover, Founder, Redwood EDA
+3. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalpghosh@gmail.com
+4. Sumanto Kar, eSim Team, FOSSEE
+
+# References
+
