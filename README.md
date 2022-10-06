@@ -2,7 +2,7 @@
 
 # Abstract
 
-A 4-bit servo tracking analog to digital converter is designed which can convert analog signal of amplitude ranging between 0 to VCC V. The input voltage VCC of the designed circuit is 1 V. 4 bit up down counter circuit is designed using verilog code in Makerchip. The Verilator converts the verilog code to usable 4 bit up down counter chip. The 4 bit up-down counter is used along with other SKY130 components like resistor and op-amps to design 4 bit servo tracking type ADC.
+A 4-bit servo tracking analog to digital converter is designed which can convert analog signal of amplitude ranging between 0 to VCC V. The input voltage VCC of the designed circuit is 1 V. 4 bit up down counter circuit is designed using verilog code in Makerchip. The Verilator converts the verilog code to usable 4 bit up down counter chip for simulation in NgSpice. The 4 bit up-down counter is used along with other SKY130 components like resistor and op-amps to design 4 bit servo tracking type ADC.
 
 # Reference Circuit Diagram
 
