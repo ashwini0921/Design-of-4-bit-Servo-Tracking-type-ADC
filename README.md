@@ -81,7 +81,7 @@ It is a tool which converts Verilog code to C++ objects. Refer: https://www.veri
      logic  [3 : 0] Count;//output
      //The $random() can be replaced if user wants to assign values
      assign Clk = clk;
-     assign UpOrDown = 1'b0;
+     assign UpOrDown = 1'b0; //Make UpOrDown = 1'b1 for up count
      ashwini_updown_counter4bit ashwini_updown_counter4bit(.Clk(Clk), .UpOrDown(UpOrDown), .Count(Count));
      \TLV
      //Add \TLV here if desired                                     
