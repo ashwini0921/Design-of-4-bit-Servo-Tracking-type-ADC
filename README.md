@@ -12,7 +12,7 @@ A 4-bit servo tracking analog to digital converter is designed which can convert
 
 # Circuit Details
 
-The Digital output of analog signal is given by signal Q3 Q2 Q1 Q0
+The Digital output of analog signal is given by signal Q0 Q1 Q2 Q3 for verification of digital output and to compare with input voltage R-2R DAC is used, if the input voltage is greater than DAC voltage then counter should count-up else count-down. The input signal as well as DAC output is plotted to verify the results.
 
 # Software Used
 
