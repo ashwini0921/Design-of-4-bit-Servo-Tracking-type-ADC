@@ -154,6 +154,10 @@ It is a tool which converts Verilog code to C++ objects. Refer: https://www.veri
 2. Steve Hoover, Founder, Redwood EDA
 3. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalpghosh@gmail.com
 4. Sumanto Kar, eSim Team, FOSSEE
+5. Google
+6. https://spoken-tutorial.org/
+7. https://vlsisystemdesign.com/
+8. https://www.c2s.gov.in/
 
 # References
 
