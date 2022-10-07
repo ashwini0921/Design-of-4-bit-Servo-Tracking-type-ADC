@@ -46,12 +46,11 @@ It is a tool which converts Verilog code to C++ objects. Refer: https://www.veri
 
 # Makerchip
 
-    \TLV_version 1d: tl-x.org
-    \SV
-    /* verilator lint_off UNUSED*/  /* verilator lint_off DECLFILENAME*/  /* verilator lint_off BLKSEQ*/  /* verilator lint_off WIDTH*/  /* verilator lint_off SELRANGE*/  /* verilator lint_off PINCONNECTEMPTY*/  /* verilator lint_off DEFPARAM*/  /* verilator lint_off IMPLICIT*/  /* verilator lint_off COMBDLY*/  /* verilator lint_off SYNCASYNCNET*/  /* verilator lint_off UNOPTFLAT */  /* verilator lint_off UNSIGNED*/  /* verilator lint_off CASEINCOMPLETE*/  /* verilator  lint_off UNDRIVEN*/  /* verilator lint_off VARHIDDEN*/  /* verilator lint_off CASEX*/  /* verilator lint_off CASEOVERLAP*/  /* verilator lint_off     PINMISSING*/  /* verilator lint_off BLKANDNBLK*/  /* verilator lint_off MULTIDRIVEN*/  /* verilator lint_off WIDTHCONCAT*/  /* verilator lint_off ASSIGNDLY*/     /* verilator lint_off MODDUP*/  /* verilator lint_off STMTDLY*/  /* verilator lint_off LITENDIAN*/  /* verilator lint_off INITIALDLY*/ 
-    //Your Verilog/System Verilog Code Starts Here:
-
-    module ashwini_updown_counter4bit(
+\TLV_version 1d: tl-x.org
+\SV
+/* verilator lint_off UNUSED*/  /* verilator lint_off DECLFILENAME*/  /* verilator lint_off BLKSEQ*/  /* verilator lint_off WIDTH*/  /* verilator lint_off SELRANGE*/  /* verilator lint_off PINCONNECTEMPTY*/  /* verilator lint_off DEFPARAM*/  /* verilator lint_off IMPLICIT*/  /* verilator lint_off COMBDLY*/  /* verilator lint_off SYNCASYNCNET*/  /* verilator lint_off UNOPTFLAT */  /* verilator lint_off UNSIGNED*/  /* verilator lint_off CASEINCOMPLETE*/  /* verilator lint_off UNDRIVEN*/  /* verilator lint_off VARHIDDEN*/  /* verilator lint_off CASEX*/  /* verilator lint_off CASEOVERLAP*/  /* verilator lint_off PINMISSING*/  /* verilator lint_off BLKANDNBLK*/  /* verilator lint_off MULTIDRIVEN*/  /* verilator lint_off WIDTHCONCAT*/  /* verilator lint_off ASSIGNDLY*/  /* verilator lint_off MODDUP*/  /* verilator lint_off STMTDLY*/  /* verilator lint_off LITENDIAN*/  /* verilator lint_off INITIALDLY*/ 
+//Your Verilog/System Verilog Code Starts Here:
+module ashwini_updown_counter4bit(
     Clk,
     UpOrDown,  //Ashwini Kumar up-down counter 1 for up 0 for down
     Count
@@ -59,7 +58,8 @@ It is a tool which converts Verilog code to C++ objects. Refer: https://www.veri
     
     input Clk,UpOrDown;
     output [3 : 0] Count;
-    reg [3 : 0] Count = 0;  
+    reg [3 : 0] Count = 0; 
+    
      always @(posedge(Clk))
      begin
             if(UpOrDown == 1)   //Up mode selected
@@ -72,21 +72,26 @@ It is a tool which converts Verilog code to C++ objects. Refer: https://www.veri
                     Count <= 15;
                 else
                     Count <= Count - 1; //Decrement counter
-     end   
-     endmodule
-     //Top Module Code Starts here:
-     module top(input logic clk, input logic reset, input logic [31:0] cyc_cnt, output logic passed, output logic failed);
-     logic  Clk;//input
-     logic  UpOrDown;//input
-     logic  [3 : 0] Count;//output
-     //The $random() can be replaced if user wants to assign values
-     assign Clk = clk;
-     assign UpOrDown = 1'b0;
-     ashwini_updown_counter4bit ashwini_updown_counter4bit(.Clk(Clk), .UpOrDown(UpOrDown), .Count(Count));
-     \TLV
-     //Add \TLV here if desired                                     
-     \SV
-     endmodule
+     end       
+     
+endmodule
+//Top Module Code Starts here:
+
+	module top(input logic clk, input logic reset, input logic [31:0] cyc_cnt, output logic passed, output logic failed);
+		logic  Clk;//input
+		logic  UpOrDown;//input
+		logic  [3 : 0] Count;//output
+//The $random() can be replaced if user wants to assign values
+		assign Clk = clk;
+		assign UpOrDown = 1'b0; //change it to 1'b1 for up count
+		ashwini_updown_counter4bit ashwini_updown_counter4bit(.Clk(Clk), .UpOrDown(UpOrDown), .Count(Count));
+\TLV
+//Add \TLV here if desired                                     
+\SV
+endmodule
+
+
+
 
 # Makerchip Plots
 
@@ -131,10 +136,10 @@ It is a tool which converts Verilog code to C++ objects. Refer: https://www.veri
        git clone https://github.com/ashwini0921/Design-of-4-bit-Servo-Tracking-type-ADC.git
 3. Change directory:
 
-       cd eSim_project_files/Design_of_4-bit-Servo-Tracking-type-ADC
+       cd eSim-Workspace/servo_tracking_ADC1
 4. Run ngspice:
 
-        ngspice xor_xnor.cir.out
+        ngspice servo_tracking_ADC1.cir.out
 5. To run the project in eSim:
 
 1)  Run eSim
