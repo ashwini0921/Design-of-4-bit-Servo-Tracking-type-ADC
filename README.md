@@ -131,19 +131,19 @@ endmodule
 
 
 1. Open a new terminal
-2. Clone this project using the following command:
+2. Change directory:
+
+       cd eSim-Workspace
+3. Clone this project using the following command:
 
        git clone https://github.com/ashwini0921/Design-of-4-bit-Servo-Tracking-type-ADC.git
-3. Change directory:
-
-       cd eSim-Workspace/servo_tracking_ADC1
 4. Run ngspice:
 
         ngspice servo_tracking_ADC1.cir.out
 5. To run the project in eSim:
 
 1)  Run eSim
-2)  Load the project
+2)  Load the project named servo_tracking_ADC1
 3)  Open eeSchema
 
 # Acknowlegdements
